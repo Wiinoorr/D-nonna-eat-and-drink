@@ -136,13 +136,14 @@
   </style>
 </head>
 
-<body class="bg-surface text-on-surface">
+<body id="home" class="bg-surface text-on-surface">
   <!-- Top Navigation Bar -->
-  <nav class="fixed top-0 w-full z-50 bg-[#fbf9f5]/90 dark:bg-[#1b1c1a]/90 backdrop-blur-md">
+  <nav class="fixed top-0 w-full z-[9999] bg-[#fbf9f5]/90 dark:bg-[#1b1c1a]/90 backdrop-blur-md">
     <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
-      <div class="text-xl font-black text-[#553722] dark:text-[#f5f3ef] tracking-tighter">
-        D’nonna eat and drink
-      </div>
+      <a href="#home"
+        class="text-xl font-black text-[#553722] dark:text-[#f5f3ef] tracking-tighter hover:opacity-80 transition">
+        D'nonna eat and drink
+      </a>
       <div class="hidden md:flex gap-8 items-center">
         <a class="text-[#553722] dark:text-[#d6e7d0] border-b-2 border-[#553722] pb-1 font-semibold tracking-tight"
           href="#about">Our Story</a>
@@ -203,7 +204,7 @@
           </div>
         </div>
       </div>
-      <div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -z-0 rounded-l-[100px]"></div>
+      <div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low rounded-l-[100px] pointer-events-none"></div>
     </section>
     <!-- Section 2: About Us -->
     <section id="about" class="bg-surface-container-low py-24">
